@@ -25,14 +25,14 @@ jobs:
                   <servers>
                     <server>
                       <id>github</id>
-                      <username>${{ secrets.GITHUB_ACTOR }}</username>
-                      <password>${{ secrets.GITHUB_TOKEN }}</password>
+                      <username>${{ github.actor }}</username>
+                      <password>${{ secrets.PAT_TOKEN }}</password>
                     </server>
                   </servers>
                 </settings>" > ~/.m2/settings.xml
 
       - name: Build and Deploy
         run: mvn deploy
-        working-directory: ./mavengpm  # Ensure this points to the directory with your pom.xml
+        working-directory: ./mavengpm
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
