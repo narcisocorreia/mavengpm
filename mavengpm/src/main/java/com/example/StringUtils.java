@@ -5,7 +5,7 @@ public class StringUtils {
         return new StringBuilder(input).reverse().toString();
     }
 
-    public static String greatingInator(String input) {
-        return "Hello From the Stitchers"
+    public static String greettingInator(String input) {
+        return "Hello Stitchers";
     }
 }
