@@ -32,7 +32,8 @@ jobs:
                 </settings>" > ~/.m2/settings.xml
 
       - name: Build and Deploy
-        run: mvn deploy
-        working-directory: ./mavengpm
+        run: |
+          mvn clean install
+          mvn deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_PAT: ${{ secrets.PAT_TOKEN }}

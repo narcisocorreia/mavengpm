@@ -5,7 +5,8 @@
 
   <groupId>com.example</groupId>
   <artifactId>mavengpm</artifactId>
-  <version>1.0.0</version>
+  <!-- Increment the version number -->
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>mavengpm</name>
@@ -25,6 +26,12 @@
     <repository>
       <id>github</id>
       <url>https://maven.pkg.github.com/narcisocorreia/mavengpm</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
 
