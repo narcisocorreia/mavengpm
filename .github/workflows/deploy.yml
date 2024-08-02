@@ -26,12 +26,13 @@ jobs:
                     <server>
                       <id>github</id>
                       <username>${{ github.actor }}</username>
-                      <password>${{ secrets.PAT_TOKEN }}</password>
+                      <password>${{ secrets.PAT_TOKENg }}</password>
                     </server>
                   </servers>
                 </settings>" > ~/.m2/settings.xml
 
       - name: Build and Deploy
+        working-directory: ./mavengpm
         run: |
           mvn clean install
           mvn deploy
