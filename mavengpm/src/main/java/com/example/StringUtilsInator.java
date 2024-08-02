@@ -1,7 +1,7 @@
 package com.example;
 
-public class StringUtils {
-    public static String reverseStringInator(String input) {
+public class StringUtilsInator {
+    public static String reverseInator(String input) {
         return new StringBuilder(input).reverse().toString();
     }
 

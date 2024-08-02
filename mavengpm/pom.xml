@@ -6,7 +6,7 @@
   <groupId>com.example</groupId>
   <artifactId>mavengpm</artifactId>
   <!-- Increment the version number -->
-  <version>1.0.1</version>
+  <version>11.0.0</version>
   <packaging>jar</packaging>
 
   <name>mavengpm</name>
