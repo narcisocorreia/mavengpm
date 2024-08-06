@@ -8,4 +8,8 @@ public class StringUtilsInator {
     public static String greettingInator(String input) {
         return "Hello Stitchers";
     }
+
+    public static String goodbyInator(String input) {
+        return "Good By Stitchers";
+    }
 }
